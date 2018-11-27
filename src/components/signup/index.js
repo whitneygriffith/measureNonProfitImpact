@@ -33,7 +33,7 @@ class Signup extends Component {
 
     componentWillUpdate(nextProps) {
         if (nextProps.auth) {
-            this.context.router.history.push("/home");
+            this.context.router.history.push("/fullname");
         }
     }
 

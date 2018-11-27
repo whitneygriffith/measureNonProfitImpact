@@ -1,4 +1,4 @@
-import { todosRef, authRef } from "../config/firebase";
+import { todosRef, authRef, db } from "../config/firebase";
 import { FETCH_TODOS, FETCH_USER } from "./types";
 
 export const addToDo = (newToDo, uid) => async dispatch => {
@@ -40,6 +40,17 @@ export const fetchUser = () => dispatch => {
     });
 };
 
+export const addUserCountry = (country) =>  dispatch => {
+    db
+        .ref('users/' + authRef.currentUser.uid + '/description')
+        .set({
+            fullName: authRef.currentUser.displayName,
+            email: authRef.currentUser.email,
+            countryCode: country
+        });
+};
+
+
 export const signIn = (username, password) => dispatch => {
     authRef
         .signInWithEmailAndPassword(username, password)
@@ -52,7 +63,12 @@ export const signIn = (username, password) => dispatch => {
 export const signUp = (username, password) => dispatch => {
     authRef
         .createUserWithEmailAndPassword(username, password)
-        .then(result => { })
+        .then(result => {
+            authRef.currentUser.sendEmailVerification()
+            .catch(error =>{
+                console.log(error);
+            })
+         })
         .catch(error => {
             console.log(error);
         });
@@ -69,3 +85,16 @@ export const signOut = () => dispatch => {
             console.log(error);
         });
 };
+
+export const setDisplayName = (name) => dispatch => {
+    authRef
+        .currentUser
+        .updateProfile({
+            displayName: name
+        }).then(function () {
+            console.log(authRef.currentUser);
+        }).catch(function (error) {
+            console.log(error);
+        });
+};
+

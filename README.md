@@ -59,9 +59,13 @@ Here's a walkthrough of our development iterations:
 
 ## Development TODOs
 
+### Authorizations
+[ ] In the Sign Up Flow prevent going back to past screens such as Full Name
+
 ### Firebase
 [ ] Handle Firebase Sign In With Link CallBack using onAuthStateCHanged Listener
 [ ] Error Handling to display error to user from Firebase's Sign In, Sign Up and other function calls
+[ ] Sign Up email verification link is not sending to hotmail.com 
 
 ### Sign Up
 [ ] Create input pattern validators for Email, Phone Number [Ref](https://www.w3schools.com/html/html_form_attributes.asp)
