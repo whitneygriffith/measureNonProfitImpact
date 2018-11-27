@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
+
+//Components
 import ToDoList from "./components/ToDoList";
-import SignIn from "./components/SignIn";
+import LoginPassword from "./components/login-password";
+import Signup from "./components/signup";
+
+//Routing + Authorization
 import requireAuth from "./components/auth/requireAuth";
 import { BrowserRouter, Route } from "react-router-dom";
 import { connect } from "react-redux";
@@ -15,8 +20,9 @@ class App extends Component {
     return (
       <BrowserRouter>
         <div className="container">
-          <Route exact path="/" component={SignIn} />
-          <Route path="/app" component={requireAuth(ToDoList)} />
+          <Route exact path="/" component={LoginPassword} />
+          <Route exact path="/signup" component={Signup} />
+          <Route path="/home" component={requireAuth(ToDoList)} />
         </div>
       </BrowserRouter>
     );

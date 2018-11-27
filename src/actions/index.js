@@ -1,4 +1,4 @@
-import { todosRef, authRef, provider } from "../config/firebase";
+import { todosRef, authRef } from "../config/firebase";
 import { FETCH_TODOS, FETCH_USER } from "./types";
 
 export const addToDo = (newToDo, uid) => async dispatch => {
@@ -40,14 +40,24 @@ export const fetchUser = () => dispatch => {
     });
 };
 
-export const signIn = () => dispatch => {
+export const signIn = (username, password) => dispatch => {
     authRef
-        .signInWithPopup(provider)
+        .signInWithEmailAndPassword(username, password)
         .then(result => { })
         .catch(error => {
             console.log(error);
         });
 };
+
+export const signUp = (username, password) => dispatch => {
+    authRef
+        .createUserWithEmailAndPassword(username, password)
+        .then(result => { })
+        .catch(error => {
+            console.log(error);
+        });
+};
+
 
 export const signOut = () => dispatch => {
     authRef

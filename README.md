@@ -19,7 +19,7 @@
 [Tutorial2](https://medium.com/quick-code/how-to-integrate-react-redux-and-firebase-in-3-simple-steps-c44804a6af38)
 [Tutorial3](https://medium.com/quick-code/adding-authentication-to-react-redux-firebase-app-f0efcb1c519a)
 
-[ ] [Combine with our Client](https://github.com/whitneygriffith/seamlessmoney/tree/client-enterprise)
+[ ] [Combine with our Client](https://github.com/whitneygriffith/seamlessmoney/tree/client-pages-no-auth)
 
 [ ] Re-edit each Page Functionalities
 
@@ -29,17 +29,11 @@
 
 [ ] React Native Integration for Mobile Clients
 
-
-
-### UI Builders
-
-[Pagedraw](https://pagedraw.io/)
-
-
-
 ## Internal Company Documents
 
 [Application Config Keys](http://bit.ly/AppConfigs)
+
+[UI Builder - Pagedraw](https://pagedraw.io/)
 
 
 ## Instructions
@@ -65,11 +59,18 @@ Here's a walkthrough of our development iterations:
 
 ## Development TODOs
 
+### Firebase
 [ ] Handle Firebase Sign In With Link CallBack using onAuthStateCHanged Listener
-[ ] Deal with persisting react icon across all pages but the main page. It has something to do with webpack rendering favicon.ico
+[ ] Error Handling to display error to user from Firebase's Sign In, Sign Up and other function calls
+
+### Sign Up
 [ ] Create input pattern validators for Email, Phone Number [Ref](https://www.w3schools.com/html/html_form_attributes.asp)
+[ ] Create function to check password1 and password2 is equal, error handling to tell user: password don't match and so on...
+
+### UI 
+[ ] Clean up css for ```login-password```
+[ ] Standardized CSS for all common components
 [ ] Consider switching color scheme to purple rgb(128,0,128) [Meaning](https://www.bourncreative.com/meaning-of-the-color-purple/)
-[ ] Figure out why all the firebase config isn't passing through from env 
 
 ## Production TODOs
 
