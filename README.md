@@ -57,6 +57,11 @@ Here's a walkthrough of our development iterations:
 
 <img src='https://imgur.com/28K9LCn.gif' title='Iteration 1' width='' alt='Video Walkthrough' />
 
+<img src='https://imgur.com/JMMH5CU.gif' title='Senior Project Demo' width='' alt='Video Walkthrough' />
+
+
+
+
 ## Development TODOs
 
 ### Authorizations
