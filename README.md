@@ -2,11 +2,11 @@
 
 ```master``` == main client + redux + firebase + react 
 
-```react-flask-backend``` == pagedraw UI + React + Flask as backend + Separation of Client and Server
-
 ```stellar-stripe``` == stripe connected to SEAMs
 
 ```client-pages-no-auth``` == Seamless web app, Create React App - v2.1.1 boilerplate with integration of Redux, React Router, Redux thunk & Reactstrap(Bootstrap v4) + stopped when I couldn't get the auth wrapper working well
+
+```react-flask-backend``` == pagedraw UI + React + Flask as backend + Separation of Client and Server
 
 ```failed-redux-react-firebase-generator``` === Attempt to use [React Firebase (Redux optional) yeoman generator](https://github.com/prescottprue/generator-react-firebase) to solve the connection between redux and firebase and page auth wrappers
 
