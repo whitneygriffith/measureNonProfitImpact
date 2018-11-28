@@ -41,6 +41,7 @@ class Home extends Component {
 
 
         this.goSend = this.goSend.bind(this);
+        this.goTransactions = this.goTransactions.bind(this);
         this.onChange = this.onChange.bind(this);
     }
 
@@ -51,6 +52,10 @@ class Home extends Component {
 
     goSend(){
         this.context.router.history.push("/send");
+    };
+
+    goTransactions(){
+        this.context.router.history.push("/transactions");
     };
 
 
@@ -97,8 +102,8 @@ class Home extends Component {
                 <div className="name-space"></div>
 
                 <div className="button-size">
-                    <button className="pbutton-style">
-                        Activity
+                    <button onClick={this.goTransactions} className="pbutton-style">
+                        Transactions
                     </button>
                 </div>
 

@@ -36,7 +36,7 @@ class Send extends Component {
 
     handleClick() {
         this.props.addTransaction(this.state.amount, this.state.to, this.state.for);
-        this.context.router.history.push("/home");
+        this.context.router.history.push("/success");
     }
 
     render() {

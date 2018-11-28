@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:');
+
+.success-success-4 {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background: rgb(255, 255, 255);
+    min-height: 100vh;
+}
+
+.success-0 {
+    width: 0px;
+    flex-shrink: 0;
+    flex-grow: 0.23293172690763053;
+    flex-basis: 0px;
+}
+
+.subutton-size {
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center; 
+}
+
+.subutton-style {
+    border-radius: 8px;
+    background:  rgb(25, 149, 173);
+    flex-shrink: 0;
+    width: 360px;
+    height: 60px;
+
+    color: #FFFFFF;
+    padding: 20px 90px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    border: 1px solid  rgb(25, 149, 173);
+}
+
+.success-1 {
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+}
+
+.success-zip-2 {
+    width: 428px;
+    flex-shrink: 0;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(25, 149, 173);
+    font-size: 110px;
+    line-height: 125px;
+    letter-spacing: 1px;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.success-2 {
+    width: 0px;
+    flex-shrink: 0;
+    flex-grow: 0.04551539491298527;
+    flex-basis: 0px;
+}
+
+.success-3 {
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+}
+
+.success-zip-3 {
+    width: 358px;
+    flex-shrink: 0;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(25, 149, 173);
+    font-size: 40px;
+    line-height: 46px;
+    letter-spacing: 1px;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.success-4 {
+    width: 0px;
+    flex-shrink: 0;
+    flex-grow: 0.18072289156626506;
+    flex-basis: 0px;
+}
+
+.success-5 {
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+}
+
+.success-rectangle-4 {
+    display: flex;
+    flex-direction: column;
+    padding-top: 25px;
+    padding-bottom: 16px;
+    border-radius: 8px;
+    background: rgb(25, 149, 173);
+}
+
+.success-5-0-0 {
+    display: flex;
+    flex-shrink: 0;
+    padding-left: 117px;
+    padding-right: 118px;
+}
+
+.success-sign_in-4 {
+    width: 125px;
+    flex-shrink: 0;
+    font-family: "Open Sans", sans-serif;
+    color: #FFFFFF;
+    font-size: 17px;
+    line-height: 19px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.success-6 {
+    width: 0px;
+    flex-shrink: 0;
+    flex-grow: 0.5408299866131191;
+    flex-basis: 0px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.pd-onhover-parent >.pd-onhover {
+    display: none;
+}
+
+.pd-onhover-parent:hover > * {
+    display: none;
+}
+
+.pd-onhover-parent:hover > .pd-onhover {
+    display: flex;
+}
+
+.pd-onactive-parent > .pd-onactive {
+    display: none;
+}
+
+.pd-onactive-parent:active > * {
+    display: none;
+}
+
+.pd-onactive-parent:active > .pd-onactive {
+    display: flex;
+}
+
+.pd-onactive-parent.pd-onhover-parent:active > .pd-onhover {
+    display: none;
+}

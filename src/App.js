@@ -10,6 +10,8 @@ import Usertag from "./components/usertag";
 import Zipcode from "./components/zipcode";
 import Home from "./components/home";
 import Send from "./components/send";
+import Success from "./components/success";
+import Transactions from "./components/transactions";
 
 //Routing + Authorization
 import requireAuth from "./components/auth/requireAuth";
@@ -36,6 +38,8 @@ class App extends Component {
           <Route exact path="/usertag" component={requireAuth(Usertag)} />
           <Route exact path="/zipcode" component={requireAuth(Zipcode)} />
           <Route exact path="/send" component={requireAuth(Send)} />
+          <Route exact path="/success" component={requireAuth(Success)} />
+          <Route exact path="/transactions" component={requireAuth(Transactions)} />
         </div>
       </BrowserRouter>
     );
