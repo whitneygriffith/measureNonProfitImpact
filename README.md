@@ -55,11 +55,11 @@
 
 Here's a walkthrough of our development iterations:
 
+#### Iteration 1 
 <img src='https://imgur.com/28K9LCn.gif' title='Iteration 1' width='' alt='Video Walkthrough' />
 
+#### Senior Project Demo
 <img src='https://imgur.com/JMMH5CU.gif' title='Senior Project Demo' width='' alt='Video Walkthrough' />
-
-
 
 
 ## Development TODOs
