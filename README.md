@@ -67,6 +67,11 @@ Here's a walkthrough of our development iterations:
 [ ] Error Handling to display error to user from Firebase's Sign In, Sign Up and other function calls
 [ ] Sign Up email verification link is not sending to hotmail.com 
 
+### Home 
+
+[ ] Figure out how to return data from database such as userTag and picture to load on home screen
+
+
 ### Sign Up
 [ ] Create input pattern validators for Email, Phone Number [Ref](https://www.w3schools.com/html/html_form_attributes.asp)
 [ ] Create function to check password1 and password2 is equal, error handling to tell user: password don't match and so on...
@@ -77,6 +82,9 @@ Here's a walkthrough of our development iterations:
 [ ] Consider switching color scheme to purple rgb(128,0,128) [Meaning](https://www.bourncreative.com/meaning-of-the-color-purple/)
 
 ## Production TODOs
+
+### General
+[ ] Separate Client from server side
 
 ### Environment Variables
 [ ] Set ```env``` to ```production``` in ```config.js```

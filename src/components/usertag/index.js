@@ -1,10 +1,10 @@
 import "./style.css";
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { setDisplayName } from "../../actions";
+import { addUserTag } from "../../actions";
 import PropTypes from "prop-types";
 
-class Fullname extends Component {
+class Usertag extends Component {
     static contextTypes = {
         router: PropTypes.object
     };
@@ -12,18 +12,14 @@ class Fullname extends Component {
     constructor(props) {
         super(props);
         this.state = { 
-            fullname: ''
+            userTag: ''
         };
 
         this.handleClick = this.handleClick.bind(this);
         this.onChange = this.onChange.bind(this);
-        this.goNext = this.goNext.bind(this);
 
     }
 
-    goNext() {
-        this.context.router.history.push("/");
-    }
 
     onChange = event => {
         this.setState({ [event.target.name]: event.target.value });
@@ -37,32 +33,31 @@ class Fullname extends Component {
 */
 
     handleClick(){
-        this.props.setDisplayName(this.state.fullname);
-        this.context.router.history.push("/usercountry");
+        this.props.addUserTag(this.state.userTag);
+        this.context.router.history.push("/home");
     }
 
     render() {
         return (
-            <div className="fullname-fullname-8">
-                <div className="fullname-0" />
-                <div className="fullname-1">
-                    <div className="fullname-please_confirm_your_first_and_last_name_-5">
-                        Please confirm your first and last name
+            <div className="component_1-component_1">
+                <div className="component_1-0" />
+                <div className="component_1-1">
+                    <div className="component_1-choose_a_seamtag_your_unique_name_for_getting_paid_by_anyone_-7">
+                        Choose a SeamTag, your unique name for getting paid by anyone
               </div>
                 </div>
-                <div className="fullname-2" />
-                <div className="fullname-3">
-                    <input type="text" onChange={this.onChange} name="fullname" placeholder="Full Name" className="fullname-fullname-7" />
+                <div className="component_1-2" />
+                <div className="component_1-3">
+                    <input type="text" name="userTag" onChange={this.onChange} placeholder="seampay.me/$" className="component_1-seamtag-6" />
                 </div>
-                <div className="fullname-4" />
-                <div className="fullname-5">
-                
-                <div className="button-size">
-                    <button className="button-style" onClick={this.handleClick}>Save</button>
+                <div className="component_1-4" />
+                <div className="component_1-5">
+
+                    <div className="button-size">
+                        <button className="button-style" onClick={this.handleClick}>Next</button>
+                    </div>
                 </div>
 
-
-                </div>
             </div>
         );
     }
@@ -72,7 +67,7 @@ function mapStateToProps({ auth }) {
     return { auth };
 }
 
-export default connect(mapStateToProps, { setDisplayName })(Fullname);
+export default connect(mapStateToProps, { addUserTag })(Usertag);
 
 //onClick={this.props.signIn}
 //onClick={this.handleClick}

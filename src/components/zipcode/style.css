@@ -23,8 +23,7 @@
     border: 1px solid rgb(65, 213, 242);
 }
 
-
-.component_1-component_1 {
+.component_2-component_2 {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
@@ -33,21 +32,26 @@
     min-height: 100vh;
 }
 
-.component_1-0 {
+.component_2-0 {
     width: 0px;
     flex-shrink: 0;
-    flex-grow: 0.9299065420560748;
+    flex-grow: 0.8805309734513275;
     flex-basis: 0px;
 }
 
-.component_1-1 {
+.component_2-1 {
     display: flex;
     flex-shrink: 0;
-    justify-content: center;
 }
 
-.component_1-choose_a_seamtag_your_unique_name_for_getting_paid_by_anyone_-7 {
-    width: 326px;
+.component_2-1-0 {
+    height: 0px;
+    flex-grow: 0.49931787175989084;
+    flex-basis: 0px;
+}
+
+.component_2-zip-3 {
+    width: 291px;
     flex-shrink: 0;
     font-family: "Open Sans", sans-serif;
     color: rgb(255, 255, 255);
@@ -61,20 +65,26 @@
     word-wrap: break-word;
 }
 
-.component_1-2 {
-    width: 0px;
-    flex-shrink: 0;
-    flex-grow: 0.028037383177570093;
+.component_2-1-2 {
+    height: 0px;
+    flex-grow: 0.5006821282401092;
     flex-basis: 0px;
 }
 
-.component_1-3 {
+.component_2-2 {
+    width: 0px;
+    flex-shrink: 0;
+    flex-grow: 0.07964601769911504;
+    flex-basis: 0px;
+}
+
+.component_2-3 {
     display: flex;
     flex-shrink: 0;
     justify-content: center;
 }
 
-.component_1-seamtag-6 {
+.component_2-zipcode-6 {
     width: 360px;
     height: 60px;
     flex-shrink: 0;
@@ -93,20 +103,20 @@
     border: 1px solid #cccccc;
 }
 
-.component_1-4 {
+.component_2-4 {
     width: 0px;
     flex-shrink: 0;
-    flex-grow: 0.04205607476635514;
+    flex-grow: 0.03982300884955752;
     flex-basis: 0px;
 }
 
-.component_1-5 {
+.component_2-5 {
     display: flex;
     flex-shrink: 0;
     justify-content: center;
 }
 
-.component_1-rectangle-9 {
+.component_2-rectangle-5 {
     display: flex;
     flex-direction: column;
     padding-top: 25px;
@@ -115,15 +125,15 @@
     background: rgb(65, 213, 242);
 }
 
-.component_1-5-0-0 {
+.component_2-5-0-0 {
     display: flex;
     flex-shrink: 0;
-    padding-left: 152px;
-    padding-right: 152px;
+    padding-left: 144px;
+    padding-right: 144px;
 }
 
-.component_1-sign_in-9 {
-    width: 56px;
+.component_2-sign_in-3 {
+    width: 72px;
     flex-shrink: 0;
     font-family: "Open Sans", sans-serif;
     color: #FFFFFF;

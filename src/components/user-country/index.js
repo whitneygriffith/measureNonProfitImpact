@@ -53,7 +53,12 @@ class UserCountry extends Component {
 
     handleClick(){
         this.props.addUserCountry(this.state.country);
-        this.context.router.history.push("/home");
+        if(this.state.country === "USA"){
+            this.context.router.history.push("/zipcode");
+        }
+        else{
+            this.context.router.history.push("/usertag");
+        }        
     }
 
 
