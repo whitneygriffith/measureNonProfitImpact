@@ -41,7 +41,7 @@
 ### Starting the project
 * ```git clone https://github.com/whitneygriffith/seamlessmoney```
 * ```git checkout -b client```
-* create ```.env``` and ```src/config/dev.js```in main folder and populate it with the info from [Application Config Keys](http://bit.ly/AppConfigs)
+* create ```src/config/dev.js```in main folder and populate it with the info from [Application Config Keys](http://bit.ly/AppConfigs)
 * ```npm install```
 * ```npm start```
 
