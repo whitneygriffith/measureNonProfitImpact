@@ -5,7 +5,7 @@
     flex-direction: column;
     flex-grow: 1;
     padding-bottom: 300px;
-    background: rgb(25, 149, 173);
+    background:  #4AC948;
     min-height: 100vh;
 }
 
@@ -97,7 +97,7 @@
 
 .button-style {
     border-radius: 8px;
-    background: rgb(65, 213, 242);
+    background: #90EE90;
     flex-shrink: 0;
     width: 360px;
     height: 60px;
@@ -109,5 +109,5 @@
     display: inline-block;
     font-size: 16px;
     letter-spacing: 0.5px;
-    border: 1px solid rgb(65, 213, 242);
+    border: 1px solid #90EE90;
 }

@@ -7,7 +7,7 @@
 
 .button-style {
   border-radius: 8px;
-  background: #41d5f2;
+  background: #90EE90;
   flex-shrink: 0;
   width: 360px;
   height: 60px;
@@ -18,7 +18,7 @@
   display: inline-block;
   font-size: 16px;
   letter-spacing: 0.5px;
-  border: 1px solid #41d5f2; }
+  border: 1px solid #90EE90; }
 
 .pbutton-style {
   border-radius: 8px;
@@ -26,7 +26,7 @@
   flex-shrink: 0;
   width: 360px;
   height: 60px;
-  color: #41d5f2;
+  color: #90EE90;
   padding: 15px 90px;
   text-align: center;
   text-decoration: none;
@@ -45,7 +45,7 @@
     flex-grow: 1;
     padding-top: 63px;
     padding-bottom: 160px;
-    background: rgb(25, 149, 173);
+    background: #90EE90;
     min-height: 100vh;
 }
 
@@ -162,7 +162,7 @@
 .home-activity-7 {
     flex-shrink: 0;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    color: rgb(65, 213, 242);
+    color: #90EE90;
     font-size: 30px;
     line-height: 34px;
     letter-spacing: 0px;
@@ -206,7 +206,7 @@
 .home-activity-9 {
     flex-shrink: 0;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    color: rgb(65, 213, 242);
+    color: #90EE90;
     font-size: 30px;
     line-height: 34px;
     letter-spacing: 0px;
@@ -250,7 +250,7 @@
 .home-activity-2 {
     flex-shrink: 0;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    color: rgb(65, 213, 242);
+    color: #90EE90;
     font-size: 30px;
     line-height: 34px;
     letter-spacing: 0px;
@@ -288,7 +288,7 @@
 .home-settings-2 {
     flex-shrink: 0;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    color: rgb(65, 213, 242);
+    color: #90EE90;
     font-size: 30px;
     line-height: 34px;
     letter-spacing: 0px;
@@ -313,7 +313,7 @@
     padding-top: 13px;
     padding-bottom: 13px;
     border-radius: 8px;
-    background: rgb(65, 213, 242);
+    background: #90EE90;
 }
 
 .home-9-0-0 {

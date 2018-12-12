@@ -1,8 +1,9 @@
 import "./style.css";
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { signUp } from "../../actions";
+import { signUp, addUserBlockchainAccount } from "../../actions";
 import PropTypes from "prop-types";
+import DisJS from "@dispatchlabs/disnode-sdk";
 
 class Signup extends Component {
     static contextTypes = {
@@ -33,12 +34,41 @@ class Signup extends Component {
 
     componentWillUpdate(nextProps) {
         if (nextProps.auth) {
-            this.context.router.history.push("/fullname");
+            this.context.router.history.push("/legalname");
+            this.props.addUserBlockchainAccount('aa5dec08b40dbf2f5c1873d13cbe5962d5793b79', '1b42a7a6ad1b842a59ac51c25eb4c81835f58e4a14b16fc614e5714dda1df1e1');
         }
     }
 
     handleClick(){
         this.props.signUp(this.state.username, this.state.password);
+        // Create an account using an object
+        let account = new DisJS.Account({
+            name: this.state.username,
+            address: 'aa5dec08b40dbf2f5c1873d13cbe5962d5793b79',
+            privateKey: '1b42a7a6ad1b842a59ac51c25eb4c81835f58e4a14b16fc614e5714dda1df1e1'
+        });
+
+        console.log(account);
+
+        /**
+         * randomly generate an account
+         
+        let account = new DisJS.Account();
+        account.init();
+        console.log(account);
+
+        account.refresh()
+        .then(() => {
+            console.log(account);
+        })
+        .catch((err) => {
+            console.error(err);
+        });
+         */
+
+
+
+        
     }
 
     render() {
@@ -103,7 +133,7 @@ function mapStateToProps({ auth }) {
     return { auth };
 }
 
-export default connect(mapStateToProps, { signUp })(Signup);
+export default connect(mapStateToProps, { signUp, addUserBlockchainAccount })(Signup);
 
 //onClick={this.props.signIn}
 //onClick={this.handleClick}

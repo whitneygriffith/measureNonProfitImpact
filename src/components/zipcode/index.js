@@ -34,7 +34,7 @@ class Zipcode extends Component {
 
     handleClick(){
         this.props.addZipcode (this.state.zipcode);
-        this.context.router.history.push("/usertag");
+        this.context.router.history.push("/country");
     }
 
     render() {

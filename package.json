@@ -1,8 +1,9 @@
 {
-  "name": "seampay",
+  "name": "impact",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@dispatchlabs/disnode-sdk": "^2.3.0",
     "firebase": "^5.5.9",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",

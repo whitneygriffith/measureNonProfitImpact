@@ -40,12 +40,7 @@ export const fetchUser = () => dispatch => {
     });
 };
 
-export const addUserCountry = (country) =>  dispatch => {
-    db
-        .ref('users/' + authRef.currentUser.uid)
-        .child('description')
-        .child('countryCode').set(country);
-    
+export const addLegalName = (name) =>  dispatch => {
     db
         .ref('users/' + authRef.currentUser.uid)
         .child('description')
@@ -54,23 +49,94 @@ export const addUserCountry = (country) =>  dispatch => {
     db
         .ref('users/' + authRef.currentUser.uid)
         .child('description')
-        .child('fullName').set(authRef.currentUser.displayName);
+        .child('legalName').set(authRef.currentUser.displayName);
 };
 
-export const addUserTag = (userTag) => dispatch => {
+
+export const addUserBlockchainAccount = (publicA, privateA) => dispatch => {
     db
         .ref('users/' + authRef.currentUser.uid)
         .child('description')
-        .child('userTag')
-        .set(userTag);
+        .child('account')
+        .child('public')
+        .set(publicA);
+    db
+        .ref('users/' + authRef.currentUser.uid)
+        .child('description')
+        .child('account')
+        .child('private')
+        .set(privateA);
 };
+
+
 
 export const addZipcode = (zipcode) => dispatch => {
     db
         .ref('users/' + authRef.currentUser.uid)
         .child('description')
+        .child('address')
         .child('zipcode')
         .set(zipcode);
+};
+
+export const addWebsite = (website) => dispatch => {
+    db
+        .ref('users/' + authRef.currentUser.uid)
+        .child('description')
+        .child('website')
+        .set(website);
+};
+
+export const addGoal = (impact, op) => dispatch => {
+    db
+        .ref('users/' + authRef.currentUser.uid)
+        .child('description')
+        .child('goal')
+        .child('impact')
+        .set(impact);
+
+    db
+        .ref('users/' + authRef.currentUser.uid)
+        .child('description')
+        .child('goal')
+        .child('op')
+        .set(op);
+};
+
+export const addStreet = (street) => dispatch => {
+    db
+        .ref('users/' + authRef.currentUser.uid)
+        .child('description')
+        .child('address')
+        .child('street')
+        .set(street);
+};
+
+export const addCity = (city) => dispatch => {
+    db
+        .ref('users/' + authRef.currentUser.uid)
+        .child('description')
+        .child('address')
+        .child('city')
+        .set(city);
+};
+
+export const addState = (state) => dispatch => {
+    db
+        .ref('users/' + authRef.currentUser.uid)
+        .child('description')
+        .child('address')
+        .child('state')
+        .set(state);
+};
+
+export const addCountry = (country) => dispatch => {
+    db
+        .ref('users/' + authRef.currentUser.uid)
+        .child('description')
+        .child('address')
+        .child('country')
+        .set(country);
 };
 
 export const addTransaction = (amount, to, reason) => dispatch => {
@@ -142,6 +208,7 @@ export const setDisplayName = (name) => dispatch => {
             console.log(error);
         });
 };
+
 
 
 
