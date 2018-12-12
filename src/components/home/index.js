@@ -64,79 +64,50 @@ class Home extends Component {
 
         
         return (
-            <div className="background2">
-                <div className="image-center">
-                    <div className="image-grow" />
-                    <img src={userpic} className="image-style" />
+            <div className="success-success-5">
+                <div className="success-0" />
+                <div className="success-1">
+                    <div className="success-1-0" />
+                    <div className="success-zip-9">Save The Water</div>
+                    <div className="success-1-2" />
                 </div>
-                <div className="name-space">
-                    <div className="display-name-position" />
-                    <div className="display-name-style">
-                        {this.state.displayName}
+                <div className="success-2" />
+                <div className="success-3">
+                    <img src="https://ucarecdn.com/89d8c931-6cd2-45a1-8d63-ddfe7aed2fdb/" className="success-image_4" />
+                </div>
+                <div className="success-4" />
+                <div className="success-5">
+                    <div className="success-zip-3">
+                        {"World Water Day, marked each year on March 22, is an opportunity to celebrate the immense progress made to improve access to clean water: between 1990 and 2015, 2.3 billion people gained access to a better, safer source of water is being Processed"}
                     </div>
                 </div>
-
-                <div>
-                    <div className="display-name-position" />
-                    <div className="userTag-style">$impactWhit</div>
+                <div className="success-6" />
+                <div className="success-7">
+                    <div className="success-line_2" />
                 </div>
-                <div className="name-space"></div>
-                <div className="name-space"></div>
-                <div className="button-size">
-                    <button className="pbutton-style">
-                            Profile
-                    </button>
+                <div className="success-8" />
+                <div className="success-9">
+                    <div className="success-zip-0">Average Impact Rating </div>
                 </div>
-
-                <div className="name-space"></div>
-                <div className="name-space"></div>
-
-                <div className="button-size">
-                    <button className="pbutton-style">
-                        Wallet
-                    </button>
+                <div className="success-10" />
+                <div className="success-11">
+                    <div className="success-oval_3">
+                        <div className="success-11-0-0">
+                            <div className="success-80">{"80%"}</div>
+                        </div>
+                    </div>
                 </div>
-
-
-                <div className="name-space"></div>
-                <div className="name-space"></div>
-
-                <div className="button-size">
-                    <button onClick={this.goTransactions} className="pbutton-style">
-                        Transactions
-                    </button>
+                <div className="success-12" />
+                <div className="success-13">
+                    <div className="success-13-0" />
+                    <div className="success-rectangle-8">
+                        <div className="success-13-1-0">
+                            <div className="success-sign_in-9">Donate</div>
+                        </div>
+                    </div>
+                    <div className="success-13-2" />
                 </div>
-
-
-                <div className="name-space"></div>
-                <div className="name-space"></div>
-
-                <div className="button-size">
-                    <button className="pbutton-style">
-                        Settings
-                    </button>
-                </div>
-
-                <div className="name-space"></div>
-                <div className="name-space"></div>
-
-                <div className="button-size">
-                    <button onClick={this.props.signOut} className="pbutton-style">
-                        Sign out
-                    </button>
-                </div>
-
-
-                <div className="name-space"></div>
-                <div className="name-space"></div>
-
-                <div className="button-size">
-                    <button onClick={this.goSend} className="button-style">
-                        Send Money Now
-                    </button>
-                </div>
-
-
+                <div className="success-14" />
             </div>
         );
     }

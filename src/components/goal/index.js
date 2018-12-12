@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { addGoal} from "../../actions";
 import PropTypes from "prop-types";
-//import DisJS from "@dispatchlabs/disnode-sdk";
+import DisNodeSDK from "@dispatchlabs/disnode-sdk";
 //import {db} from "../../config/firebase";
 
 class Goal extends Component {
@@ -35,6 +35,59 @@ class Goal extends Component {
 
     handleClick(){
         this.props.addGoal(this.state.impact, this.state.op);
+
+        let account = new DisNodeSDK.Account({
+            address: 'aa5dec08b40dbf2f5c1873d13cbe5962d5793b79',
+            privateKey: '1b42a7a6ad1b842a59ac51c25eb4c81835f58e4a14b16fc614e5714dda1df1e1'
+        });
+/*
+        let compiled = DisNodeSDK.Transaction.compileSource('contract GoalSet {address owner; struct  goal { uint impactMinGoal; uint operationalMaxGoal; string nonprofit;} goal myGoal; constructor() public { owner = msg.sender; myGoal.impactMinGoal = 80; myGoal.operationalMaxGoal = 20;}function returnImpactGoal() public view returns(uint){return myGoal.impactMinGoal;}function returnOpGoal() public view returns(uint){return myGoal.operationalMaxGoal;}}');
+        let contract = account.createContract(compiled.contracts[0].bytecode, compiled.contracts[0].abi, 5);
+        contract.whenStatusEquals('Ok')
+            .then(() => {
+                account.executeContract(contract, 'g', [], compiled.contracts[0].abi, 5);
+            })
+            .catch((err) => {
+                console.error(err);
+            });
+        //Execute contract
+*/
+        /**
+         pragma solidity >=0.4.22 <0.6.0;
+contract GoalSet {
+
+    address owner;
+
+    struct  goal {
+    uint impactMinGoal;
+    uint operationalMaxGoal;
+    string nonprofit;
+    }
+
+    goal myGoal;
+
+
+    constructor() public {
+    owner = msg.sender;
+
+
+    myGoal.impactMinGoal = 80;
+    myGoal.operationalMaxGoal = 20;
+
+
+
+    }
+
+    function returnImpactGoal() public view returns(uint){
+        return myGoal.impactMinGoal;
+    }
+
+    function returnOpGoal() public view returns(uint){
+        return myGoal.operationalMaxGoal;
+    }
+
+} 
+         */
         this.context.router.history.push("/bank");
     }
 
