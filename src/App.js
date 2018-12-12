@@ -10,11 +10,10 @@ import Street from "./components/street";
 import State from "./components/state";
 import Zipcode from "./components/zipcode";
 import Website from "./components/website";
+import Bank from "./components/bank";
 import Goal from "./components/goal";
 import Home from "./components/home";
 import Send from "./components/send";
-import Success from "./components/success";
-import Transactions from "./components/transactions";
 
 //Routing + Authorization
 import requireAuth from "./components/auth/requireAuth";
@@ -27,6 +26,7 @@ class App extends Component {
   
   constructor(props){
     super(props);
+
 
   }
   componentWillMount() {
@@ -50,8 +50,8 @@ class App extends Component {
           <Route exact path="/website" component={requireAuth(Website)} />
           <Route exact path="/goal" component={requireAuth(Goal)} />
           <Route exact path="/send" component={requireAuth(Send)} />
-          <Route exact path="/success" component={requireAuth(Success)} />
-          <Route exact path="/transactions" component={requireAuth(Transactions)} />
+          <Route exact path="/bank" component={requireAuth(Bank)} />
+
         </div>
       </BrowserRouter>
     );

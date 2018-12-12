@@ -112,6 +112,16 @@ export const addStreet = (street) => dispatch => {
         .set(street);
 };
 
+export const addBankName = (bankName) => dispatch => {
+    db
+        .ref('users/' + authRef.currentUser.uid)
+        .child('description')
+        .child('bank')
+        .child('bankName')
+        .set(bankName);
+};
+
+
 export const addCity = (city) => dispatch => {
     db
         .ref('users/' + authRef.currentUser.uid)

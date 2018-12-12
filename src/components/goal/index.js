@@ -3,6 +3,8 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { addGoal} from "../../actions";
 import PropTypes from "prop-types";
+//import DisJS from "@dispatchlabs/disnode-sdk";
+//import {db} from "../../config/firebase";
 
 class Goal extends Component {
     static contextTypes = {
@@ -11,10 +13,16 @@ class Goal extends Component {
 
     constructor(props) {
         super(props);
+        const { auth } = this.props;
+    
         this.state = { 
             impact: '',
-            op: ''
+            op: '',
+            uid: auth.uid
         };
+
+
+        
 
         this.handleClick = this.handleClick.bind(this);
         this.onChange = this.onChange.bind(this);
@@ -27,15 +35,7 @@ class Goal extends Component {
 
     handleClick(){
         this.props.addGoal(this.state.impact, this.state.op);
-
-        //Execute smart contract for this non profit
-
-
-
-        
-
-
-        this.context.router.history.push("/website");
+        this.context.router.history.push("/bank");
     }
 
     render() {
