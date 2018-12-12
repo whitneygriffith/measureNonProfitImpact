@@ -5,6 +5,6 @@
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://imgur.com/mdHeCok'  title='Login/Logout' width='' alt='Video Walkthrough' />
+<img src='https://imgur.com/mdHeCok.gif'  title='Login/Logout' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
